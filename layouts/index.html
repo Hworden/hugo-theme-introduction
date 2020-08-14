@@ -10,6 +10,7 @@
     </head>
 
     <body>
+        {{ partial "body/body_includes.html" . }}
         {{ with .Site.GetPage "/home" }}
         <section id="top" class="hero is-{{ .Site.Params.home.introHeight | default "fullheight" }}">
             <!-- Hero head section to play nice with Bulma -->
